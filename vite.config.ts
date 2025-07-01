@@ -5,6 +5,9 @@ import path from "path";
 
 export default defineConfig(() => ({
   base: "/bigview-tech/",
+  build: {
+    outDir: "docs", // <- saída do build será usada pelo GitHub Pages
+  },
   server: {
     host: "::",
     port: 8080,
